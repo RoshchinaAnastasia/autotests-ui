@@ -4,16 +4,59 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        h6 {
+            font-size: 15px;
+        }
         .h2-text {
             color: red
         }
+        .h6-text{
+            color: yellow;
+        }
+        #h1-text{
+            font-size: 50px;
+        }
+        div.Python > a{
+            color: green
+        }
+        ul li {
+            color: orange
+        }
+        input[type = "text"] {
+            background-color: aqua
+        }
+        input[type = "text"]:hover {
+            background-color: deeppink;
+        }
+
+        a:hover {
+            color: blueviolet;
+        }
+
+        li::marker {
+            color: coral;
+        }
+        div.Python > h2.h2-text {
+            color: navy;
+        }
+
+        ul>li:nth-child(2) {
+            color: violet;
+        }
+        ol>li:nth-child(odd) {
+            color: green;
+        }
+        div.nth > p:nth-of-type(2){
+            color: deeppink;
+        }
+
     </style>
 </head>
 <body>
-<div>
+<div class ="Python">
     <h1 id="h1-text">Text H1</h1>
     <h2 class="h2-text">Text H2</h2>
-    <h6 class="h2-text">Next H6</h6>
+    <h6 class="h2-text h6-text">Next H6</h6>
     <p>Будьте вежливы и соблюдайте наши принципы сообщества. <span style = "color: green">Пожалуйста</span>, не оставляйте решения и подсказки в комментариях,
     для этого есть отдельный форум.</p>
     <a href="https://learngitbranching.js.org/?locale=ru_RU&demo=" target="_blank">Python</a>
@@ -57,6 +100,17 @@
             </tr>
         </tbody>
     </table>
+    <div class = "nth">
+        <p>1</p>
+        <p>2</p>
+        <h6>3</h6>
+        <h5>4</h5>
+        <p>5</p>
+    </div>
+</div>
+<div class = "java-script">
+     <h2 class="h2-text">Text H2</h2>
+     <a href="https://learngitbranching.js.org/?locale=ru_RU&demo=" target="_blank">Java Script</a>
 </div>
 </body>
 </html>
